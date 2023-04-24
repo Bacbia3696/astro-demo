@@ -6,3 +6,6 @@ static_sites:
       deploy_on_push: true
       repo: Bacbia3696/astro-demo
     name: astro
+    routes:
+      - path: /
+    build_command: yarn build
