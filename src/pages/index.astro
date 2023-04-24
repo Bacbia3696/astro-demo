@@ -1,10 +1,41 @@
 ---
-import MainLayout from "../layouts/MainLayout.astro";
+import Avatar from "src/components/Avatar.astro";
+import FeaturedCard from "src/components/FeaturedCard.astro";
+import MainLayout from "src/layouts/MainLayout.astro";
+import FeaturedCardsLayout from "src/layouts/FeaturedCardsLayout.astro";
+import LinksLayout from "src/layouts/LinksLayout.astro";
+import Link from "src/components/Link.astro";
 ---
 
-<MainLayout title="index">
-  <nav>
-    <a href="/about">About page</a>
-  </nav>
-  <h1 class="text-4xl">Main page</h1>
+<MainLayout title="Astro LinkTree Clone">
+  <Avatar />
+  <FeaturedCardsLayout>
+    <FeaturedCard
+      featuredCardIcon="logos:patreon"
+      featuredCardTitle="Support Us!"
+      featuredCardLink="https://www.patreon.com/stefanrows"
+    />
+    <FeaturedCard
+      featuredCardIcon="logos:discord-icon"
+      featuredCardTitle="Join the Community!"
+      featuredCardLink="https://www.discord.com"
+    />
+  </FeaturedCardsLayout>
+  <LinksLayout>
+    <Link
+      linkTitle="🧑🚀 Astro"
+      linkDescription="Astro Homepage"
+      linkUrl="https://www.astro.build"
+    />
+    <Link
+      linkTitle="🌍 My Portfolio"
+      linkDescription="Look at my portfolio!"
+      linkUrl="https://www.stefanrows.com"
+    />
+    <Link
+      linkTitle="🎥 YouTube"
+      linkDescription="Visit my YouTube channel!"
+      linkUrl="https://www.youtube.com/c/stefanrows"
+    />
+  </LinksLayout>
 </MainLayout>
