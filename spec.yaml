@@ -1,4 +1,8 @@
 name: example-astro
 region: sgp1
 static_sites:
-  - source_dir:
+  - github:
+      branch: main
+      deploy_on_push: true
+      repo: Bacbia3696/astro-demo
+    name: astro
