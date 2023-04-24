@@ -1,0 +1,4 @@
+name: example-astro
+region: sgp1
+static_sites:
+  - source_dir:
